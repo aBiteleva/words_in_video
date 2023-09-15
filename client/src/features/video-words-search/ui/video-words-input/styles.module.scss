@@ -1,0 +1,40 @@
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+
+  &__input {
+    padding: 10px;
+    width: 600px;
+    font-size: 18px;
+    height: 26px;
+    border-radius: 8px;
+  }
+
+  &__button {
+    background-color: #4672b0;
+    color: white;
+    border: none;
+    padding: 8px;
+    font-size: 18px;
+    width: 136px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+
+    &:hover {
+      box-shadow: 4px 4px 10px rgba(70, 114, 176, 0.8);
+      cursor: pointer;
+    }
+
+    &:active {
+      box-shadow: inset 1px 1px 10px #2a4872;
+    }
+  }
+
+  &__error {
+    color: #d54734;
+    font-size: 20px;
+  }
+}

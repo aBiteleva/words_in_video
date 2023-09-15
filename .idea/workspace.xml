@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="262dae72-3cea-4b7d-92be-f9986be7e98c" name="Changes" comment="Поправлены кэтчи на ошибки, добавлен отдельный метод получения топ слов">
+      <change beforePath="$PROJECT_DIR$/server/mongo-data/.mongodb/mongosh/64b13ad0dc686273c3f1eed2_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/mongo-data/.mongodb/mongosh/64b13ad1d06724cf3b866586_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/mongo-data/.mongodb/mongosh/config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/mongo-data/.mongodb/mongosh/snippets/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/mongo-data/WiredTiger" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/mongo-data/WiredTiger.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/mongo-data/WiredTiger.turtle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/mongo-data/WiredTiger.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/mongo-data/WiredTigerHS.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/mongo-data/_mdb_catalog.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/mongo-data/collection-0--2957094797084797836.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/mongo-data/collection-0--5821848379376060061.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/mongo-data/collection-0-400008173547448569.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/mongo-data/collection-2--5821848379376060061.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/mongo-data/collection-2-400008173547448569.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/mongo-data/collection-4--5821848379376060061.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/mongo-data/collection-4-400008173547448569.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/mongo-data/collection-6--5821848379376060061.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/mongo-data/collection-7-400008173547448569.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/mongo-data/diagnostic.data/metrics.2023-07-14T12-08-48Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/mongo-data/diagnostic.data/metrics.2023-07-14T12-08-54Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/mongo-data/diagnostic.data/metrics.2023-07-17T07-19-18Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/mongo-data/diagnostic.data/metrics.2023-07-17T08-51-17Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/mongo-data/diagnostic.data/metrics.2023-07-20T10-10-11Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/mongo-data/diagnostic.data/metrics.2023-07-20T10-18-54Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/mongo-data/diagnostic.data/metrics.2023-07-20T11-00-48Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/mongo-data/diagnostic.data/metrics.2023-07-20T11-05-08Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/mongo-data/diagnostic.data/metrics.2023-07-20T11-08-29Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/mongo-data/diagnostic.data/metrics.2023-07-20T11-17-00Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/mongo-data/diagnostic.data/metrics.2023-07-20T11-20-16Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/mongo-data/diagnostic.data/metrics.2023-07-20T11-28-39Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/mongo-data/diagnostic.data/metrics.2023-07-20T11-35-57Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/mongo-data/diagnostic.data/metrics.2023-07-20T11-41-47Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/mongo-data/diagnostic.data/metrics.2023-07-20T11-47-18Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/mongo-data/diagnostic.data/metrics.2023-07-20T11-51-31Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/mongo-data/diagnostic.data/metrics.2023-07-20T11-53-31Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/mongo-data/diagnostic.data/metrics.2023-07-20T11-56-44Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/mongo-data/diagnostic.data/metrics.2023-07-20T12-05-15Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/mongo-data/diagnostic.data/metrics.2023-07-20T12-06-12Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/mongo-data/diagnostic.data/metrics.2023-07-20T12-13-57Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/mongo-data/diagnostic.data/metrics.2023-07-20T12-16-26Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/mongo-data/diagnostic.data/metrics.2023-07-20T12-34-34Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/mongo-data/diagnostic.data/metrics.2023-07-20T12-46-24Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/mongo-data/diagnostic.data/metrics.2023-07-20T13-07-57Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/mongo-data/diagnostic.data/metrics.2023-07-20T13-12-55Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/mongo-data/diagnostic.data/metrics.2023-07-20T13-29-39Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/mongo-data/diagnostic.data/metrics.2023-07-20T13-37-07Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/mongo-data/diagnostic.data/metrics.2023-07-20T13-39-39Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/mongo-data/diagnostic.data/metrics.2023-07-20T13-44-28Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/mongo-data/diagnostic.data/metrics.2023-07-21T06-58-20Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/mongo-data/diagnostic.data/metrics.2023-07-21T11-27-17Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/mongo-data/diagnostic.data/metrics.2023-07-21T12-02-09Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/mongo-data/diagnostic.data/metrics.2023-07-21T12-13-12Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/mongo-data/diagnostic.data/metrics.2023-07-21T12-19-33Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/mongo-data/diagnostic.data/metrics.2023-07-21T13-41-37Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/mongo-data/diagnostic.data/metrics.2023-07-21T13-50-26Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/mongo-data/diagnostic.data/metrics.2023-07-24T09-32-59Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/mongo-data/diagnostic.data/metrics.2023-07-24T10-25-23Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/mongo-data/diagnostic.data/metrics.2023-07-24T11-21-11Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/mongo-data/index-1--2957094797084797836.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/mongo-data/index-1--5821848379376060061.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/mongo-data/index-1-400008173547448569.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/mongo-data/index-3--5821848379376060061.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/mongo-data/index-3-400008173547448569.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/mongo-data/index-5--5821848379376060061.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/mongo-data/index-5-400008173547448569.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/mongo-data/index-6-400008173547448569.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/mongo-data/index-7--5821848379376060061.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/mongo-data/index-8-400008173547448569.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/mongo-data/index-9-400008173547448569.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/mongo-data/journal/WiredTigerPreplog.0000000001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/mongo-data/journal/WiredTigerPreplog.0000000002" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/mongo-data/mongod.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/mongo-data/sizeStorer.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/mongo-data/storage.bson" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
+        <option value="SCSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="MIXED" />
+  </component>
+  <component name="GitRewordedCommitMessages">
+    <option name="commitMessagesMapping">
+      <RewordedCommitMessageMapping>
+        <option name="originalMessage" value="Eslint test" />
+        <option name="rewordedMessage" value="Edit lints, add validation" />
+      </RewordedCommitMessageMapping>
+    </option>
+    <option name="currentCommit" value="1" />
+    <option name="onto" value="dd1385dd5dc013123c40b27925bb0272bbbcea96" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2SYsTvLyjTMDRAD1qu6Z0oKivBB" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/anastasiabiteleva/projects/words_in_video/client/src/entities/videoWords/types&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;SCSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/anastasiabiteleva/projects/words_in_video/node_modules/prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/anastasiabiteleva/projects/words_in_video/server/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/client/src/entities/videoWords/types" />
+      <recent name="$PROJECT_DIR$/client/src/entities/topWords" />
+      <recent name="$PROJECT_DIR$/client/src/entities/videoWords" />
+      <recent name="$PROJECT_DIR$/server/src/videoWords/dto" />
+      <recent name="$PROJECT_DIR$/client/src/shared/ui/table-view" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/client/src/features/video-words-search" />
+      <recent name="$PROJECT_DIR$/client/src/features/video-words-search/ui/video-words-input" />
+      <recent name="$PROJECT_DIR$/client/src/shared" />
+      <recent name="$PROJECT_DIR$/client/src/app/styles" />
+      <recent name="$PROJECT_DIR$/client/src/models/videoWords" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.start:dev">
+    <configuration name="build (1)" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/server/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/client/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="lint (1)" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/server/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="lint" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="lint" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/client/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="lint" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="start:dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/server/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start:dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.start:dev" />
+        <item itemvalue="npm.dev" />
+        <item itemvalue="npm.lint (1)" />
+        <item itemvalue="npm.lint" />
+        <item itemvalue="npm.build (1)" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="262dae72-3cea-4b7d-92be-f9986be7e98c" name="Changes" comment="" />
+      <created>1689334860290</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1689334860290</updated>
+      <workItem from="1689334861736" duration="166000" />
+      <workItem from="1689335055240" duration="113000" />
+      <workItem from="1689335182349" duration="10040000" />
+      <workItem from="1689577595599" duration="65000" />
+      <workItem from="1689578019554" duration="25000" />
+      <workItem from="1689578072986" duration="615000" />
+      <workItem from="1689578778504" duration="4120000" />
+      <workItem from="1689583825281" duration="50000" />
+      <workItem from="1689583926330" duration="40966000" />
+      <workItem from="1689759898090" duration="23118000" />
+      <workItem from="1689857914188" duration="24162000" />
+      <workItem from="1690203245797" duration="1221000" />
+      <workItem from="1690209973539" duration="18000" />
+      <workItem from="1690210159539" duration="7146000" />
+      <workItem from="1690450386916" duration="52000" />
+      <workItem from="1690450607225" duration="5226000" />
+      <workItem from="1690781887153" duration="3972000" />
+      <workItem from="1690806061466" duration="8000" />
+      <workItem from="1690806106652" duration="981000" />
+      <workItem from="1690808186251" duration="153000" />
+      <workItem from="1690808356699" duration="14805000" />
+      <workItem from="1691060754989" duration="47613000" />
+      <workItem from="1691505491755" duration="10000" />
+      <workItem from="1691505536449" duration="13941000" />
+      <workItem from="1691999542535" duration="3334000" />
+      <workItem from="1692003592670" duration="22000" />
+      <workItem from="1692003650010" duration="37480000" />
+      <workItem from="1692176467020" duration="550000" />
+      <workItem from="1692867934503" duration="31000" />
+      <workItem from="1694512673066" duration="619000" />
+      <workItem from="1694771203902" duration="732000" />
+    </task>
+    <task id="LOCAL-00001" summary="Change Dockerfile line 17">
+      <created>1690210878314</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1690210878314</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Change Dockerfile line 17">
+      <created>1690210905751</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1690210905751</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Change Dockerfile line 1">
+      <created>1690211351687</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1690211351687</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Add types for effector models">
+      <created>1690212866608</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1690212866608</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Remove ts-ignore usage">
+      <created>1690266976803</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1690266976803</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Change Expose port in client Dockerfile&#10;Remove one type of state in effector models">
+      <created>1690445465016</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1690445465016</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Change ports in client Dockerfile">
+      <created>1690451222901</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1690451222901</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Add url for CORS">
+      <created>1690456458795</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1690456458795</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Change baseUrl">
+      <created>1690467271047</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1690467271047</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Fix compose file">
+      <created>1690893139355</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1690893139355</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Change port 3011 -&gt; 3000">
+      <created>1690896832693</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1690896832694</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Change server Dockerfile">
+      <created>1690899891676</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1690899891676</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Remove comment code">
+      <created>1690985419033</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1690985419033</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Refactoring">
+      <created>1691486376463</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1691486376463</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Add error on input">
+      <created>1691498622135</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1691498622135</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Eslint test">
+      <created>1691504115394</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1691504115394</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Change url and port">
+      <created>1691504653490</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1691504653490</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Change url and port">
+      <created>1691504857483</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1691504857483</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Edit lints, add validation">
+      <created>1691574592530</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1691574592531</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Change port">
+      <created>1691575958094</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1691575958094</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Временный">
+      <created>1692003343950</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1692003343950</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Переработана архитектура">
+      <created>1692102767306</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1692102767306</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Поправлены кэтчи на ошибки, добавлен отдельный метод получения топ слов">
+      <created>1692110219479</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1692110219479</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/client/src/main.js" />
+        <option value="$PROJECT_DIR$/client/src/main.js.map" />
+        <option value="$PROJECT_DIR$/client/src/api/axios.js" />
+        <option value="$PROJECT_DIR$/client/src/api/axios.js.map" />
+        <option value="$PROJECT_DIR$/client/src/utils/error-utils.js.map" />
+        <option value="$PROJECT_DIR$/client/src/utils/error-utils.js" />
+        <option value="$PROJECT_DIR$/client/src/models/types.js" />
+        <option value="$PROJECT_DIR$/client/src/models/types.js.map" />
+        <option value="$PROJECT_DIR$/client/src/constants/routes.js.map" />
+        <option value="$PROJECT_DIR$/client/src/constants/routes.js" />
+        <option value="$PROJECT_DIR$/client/src/pages/MainPage/index.js" />
+        <option value="$PROJECT_DIR$/client/src/pages/MainPage/index.js.map" />
+        <option value="$PROJECT_DIR$/client/src/pages/HistoryPage/index.js" />
+        <option value="$PROJECT_DIR$/client/src/pages/HistoryPage/index.js.map" />
+        <option value="$PROJECT_DIR$/client/src/pages/TopWordsPage/index.js" />
+        <option value="$PROJECT_DIR$/client/src/pages/TopWordsPage/index.js.map" />
+        <option value="$PROJECT_DIR$/client/src/pages/VideoWordsPage/index.js" />
+        <option value="$PROJECT_DIR$/client/src/pages/VideoWordsPage/index.js.map" />
+        <option value="$PROJECT_DIR$/client/src/models/topWords/index.js" />
+        <option value="$PROJECT_DIR$/client/src/models/topWords/index.js.map" />
+        <option value="$PROJECT_DIR$/client/src/models/requestHistory/index.js" />
+        <option value="$PROJECT_DIR$/client/src/models/requestHistory/index.js.map" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Change Dockerfile line 17" />
+    <MESSAGE value="Change Dockerfile line 1" />
+    <MESSAGE value="Add types for effector models" />
+    <MESSAGE value="Remove ts-ignore usage" />
+    <MESSAGE value="Change Expose port in client Dockerfile&#10;Remove one type of state in effector models" />
+    <MESSAGE value="Change ports in client Dockerfile" />
+    <MESSAGE value="Add url for CORS" />
+    <MESSAGE value="Change baseUrl" />
+    <MESSAGE value="Fix compose file" />
+    <MESSAGE value="Change port 3011 -&gt; 3000" />
+    <MESSAGE value="Change server Dockerfile" />
+    <MESSAGE value="Remove comment code" />
+    <MESSAGE value="Refactoring" />
+    <MESSAGE value="Add error on input" />
+    <MESSAGE value="Eslint test" />
+    <MESSAGE value="Change url and port" />
+    <MESSAGE value="Edit lints, add validation" />
+    <MESSAGE value="Change port" />
+    <MESSAGE value="Временный" />
+    <MESSAGE value="Переработана архитектура" />
+    <MESSAGE value="Поправлены кэтчи на ошибки, добавлен отдельный метод получения топ слов" />
+    <option name="LAST_COMMIT_MESSAGE" value="Поправлены кэтчи на ошибки, добавлен отдельный метод получения топ слов" />
+  </component>
+</project>

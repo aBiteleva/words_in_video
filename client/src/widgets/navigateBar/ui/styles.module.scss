@@ -1,0 +1,19 @@
+.navigate-bar {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: end;
+  align-items: center;
+  color: #5e709f;
+
+  > div:not(.active-tab):hover {
+    text-decoration: underline;
+    cursor: pointer;
+    color: #2b3f75;
+  }
+}
+
+.active-tab {
+  cursor: not-allowed;
+  color: #a2aabc;
+}

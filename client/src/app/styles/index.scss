@@ -1,0 +1,24 @@
+@import "./normalize.scss";
+@import "./vars.scss";
+
+body {
+  background-color: #f4f6ff;
+}
+
+h2 {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 30px;
+  color: #4672b0;
+}
+
+h3 {
+  text-align: center;
+  font-size: 23px;
+  margin: 10px 0 20px 0;
+  color: #24426c;
+}
+
+a {
+  color: #24426c;
+}

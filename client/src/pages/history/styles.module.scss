@@ -1,0 +1,12 @@
+.history-page {
+  a {
+    font-size: 20px;
+    color: #0e2d54;
+    text-decoration: none;
+    font-weight: bold;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.historyCard {
+  &__topWords {
+    line-height: 1.2em;
+    height: 2.4em;
+    overflow: hidden;
+  }
+
+  a.showAllWords {
+    display: flex;
+    justify-content: end;
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: normal;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}

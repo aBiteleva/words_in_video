@@ -1,0 +1,56 @@
+version: '3'
+services:
+  dev:
+    container_name: words_in_video_dev
+    image: words_in_video_dev:1.0.0
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: development
+    command: >
+      sh -c "rm -fr dist &&
+            npm run start:dev"
+    ports:
+      - 4000:4000
+      - 4001:9229
+    networks:
+      - nestjs-network
+    volumes:
+      - .:/app
+      - /app/node_modules
+    restart: unless-stopped
+    env_file:
+      - .env
+
+  prod:
+    container_name: words_in_video_prod
+    image: words_in_video_prod:1.0.0
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: "npm run start:prod"
+    ports:
+      - 4000:4000
+      - 9229:9229
+    networks:
+      - nestjs-network
+    volumes:
+      - .:/app
+      - /app/node_modules
+    restart: unless-stopped
+    env_file:
+      - .env
+  mongo:
+    image: mongo
+    container_name: mongo
+    restart: always
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=admin
+      - MONGO_INITDB_ROOT_PASSWORD=admin
+    ports:
+      - 27017:27017
+    volumes:
+      - ./mongo-data:/data/db
+networks:
+  nestjs-network:
+    driver: bridge

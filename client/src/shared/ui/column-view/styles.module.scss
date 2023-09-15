@@ -1,0 +1,27 @@
+.column-item {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  flex: 1;
+  height: 48%;
+  width: 44%;
+  padding: 0 20px 0 20px;
+
+  h3 {
+    border-bottom: 2px solid #24426c;
+    padding-bottom: 15px
+  }
+}
+
+.column-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 30px;
+
+  hr {
+    border: 1px solid #24426c;
+    margin: 0;
+  }
+}

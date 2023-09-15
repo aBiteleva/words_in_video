@@ -1,0 +1,21 @@
+{
+    "semi": true,
+    "trailingComma": "all",
+    "singleQuote": false,
+    "printWidth": 120,
+    "tabWidth": 4,
+    "jsxSingleQuote": false,
+    "jsxBracketSameLine": false,
+    "bracketSpacing": true,
+    "endOfLine": "auto",
+    "importOrder": [
+        "^react(.*)",
+        "^redux(.*)",
+        "^(?!~|./|../|@)(.*)",
+        "^~src",
+        "^~components",
+        "^./(.*)",
+        "^../(.*)"
+    ],
+    "importOrderSeparation": false
+}
